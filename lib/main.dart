@@ -21,6 +21,7 @@ const List<ProdukItem> daftarProdukContoh = [
   ProdukItem(id: 'P01', nama: 'Sepatu Lari Ultralight', harga: 'Rp 750.000', ikon: Icons.directions_run),
   ProdukItem(id: 'P02', nama: 'Jam Tangan Pintar Pro', harga: 'Rp 1.200.000', ikon: Icons.watch),
   ProdukItem(id: 'P03', nama: 'Headphone Wireless Bass', harga: 'Rp 950.000', ikon: Icons.headphones),
+  ProdukItem(id: 'P04', nama: 'Smartphone Flagship', harga: 'Rp 3.500.000', ikon: Icons.phone),
 ];
 
 // Notifier sederhana untuk memantau status login (Uji Coba Route Guard):
@@ -310,10 +311,10 @@ class HalamanProfil extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
-                const CircleAvatar(radius: 44, child: Icon(Icons.person, size: 48)),
+                const CircleAvatar(radius: 44, backgroundImage: AssetImage('assets/images/pas_foto.jpg')),
                 const SizedBox(height: 12),
-                const Text('Ahmad Fullstack Developer', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-                const Text('ahmad@example.com', style: TextStyle(color: Colors.grey)),
+                const Text('Much. Trigusni Hermawan', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                const Text('mthermawan@gmail.com', style: TextStyle(color: Colors.grey)),
                 const SizedBox(height: 24),
 
                 // Switch Interaktif Simulasi Login:
